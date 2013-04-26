@@ -23,6 +23,11 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
+group :production do
+	gem 'pg', '0.12.2'
+end
+
+gem "nifty-generators", :group => :development
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -37,3 +42,5 @@ gem 'jquery-rails', '2.0.2'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test
