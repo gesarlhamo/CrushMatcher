@@ -2,9 +2,11 @@ CrushMatchingApp::Application.routes.draw do
 
   match "/home" => "static_pages#home"
 
-  get "/help" => "static_pages#help"
+  get "/about" => "static_pages#about"
 
   get "/contact" =>"static_pages#contact"
+
+  get "/help" => "static_pages#help"
 
 
   resources :targets
