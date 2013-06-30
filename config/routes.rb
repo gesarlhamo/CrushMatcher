@@ -8,6 +8,11 @@ CrushMatchingApp::Application.routes.draw do
 
   get "/help" => "static_pages#help"
 
+  get "/targets" => "static_pages#targets"
+
+  get "user" => "static_pages#user"
+
+
 
   resources :targets
 

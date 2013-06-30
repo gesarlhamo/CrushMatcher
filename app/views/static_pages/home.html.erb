@@ -6,19 +6,20 @@
 			<title>Crush Matching!</title>
             <script src="jquery-1.10.0.min.js"></script>
 			<link type="text/css"  rel="static_page"  href="static_pages.css"/>
-			<link type="text/css"  rel="button"       href="button.css"/>
+			<link type="text/css"  rel="buttons"       href="buttons.css"/>
 
 	    </head>
 	    <body>
         <a href = "home"> <h1>Let's find out, if your secret crush likes you back!</h1></a>
         <a href="home" class="buttons">Home</a>
         <a href="about" class="buttons">About</a>
-        <a href="Help" class="buttons">Help</a>
+        <a href="help" class="buttons">Help</a>
 
 
 		<script> $(document).ready(function () {
 			$('.buttons').hide();{
 			$('.buttons').slideToggle("slow");
+			$(this).remove();
 		};
 		 
 		}); 
